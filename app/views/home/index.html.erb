@@ -1,0 +1,53 @@
+<section>
+  <h1>Music Database</h1>
+  <h2>Add a Song</h2>
+  <p class="status"></p>
+  <div class="errors"></div>
+  <form id="formu">
+    <div class="field">
+      <label>title</label><br>
+      <input type="title" name="title" id="#music_title">
+    </div>
+    <div class="field">
+      <label> artist </label><br>
+      <input type="artist" name="artist" id="#music_artist">
+    </div>
+    <div class="field">
+      <label> year </label><br>
+      <input type="year" name="year" id="#music_year">
+    </div>
+    <div class="field">
+      <label> genre </label><br>
+      <input type="genre" name="genre" id="#music_gnre">
+    </div>
+    <div class="actions">
+      <button type="submit">Add song</button>
+    </div>
+  </form>
+  
+  <h2>List of Songs</h2>
+  <table id="music_list">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Artist</th>
+        <th>Year</th>
+        <th>Genre</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+  
+    <tbody>
+      <!--< @musics.each do |music| >-->
+        <tr>
+          <td>title</td>
+          <td>artist</td>
+          <td>year</td>
+          <td>genre</td>
+          <td><a class='music_delete' data-method='delete' href='/musics/id'>x</a></td>
+        </tr>
+      <!--<end >-->
+    </tbody>
+  </table>
+  <p class="no_music">No music yet... please, add some!</p>
+</section>
